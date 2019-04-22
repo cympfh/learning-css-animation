@@ -1,0 +1,34 @@
+.wrap {
+    .bar {
+        height: 30px;
+        width: 300px;
+        margin: 0;
+        &:nth-child(1) {
+            animation: show-bar 1s linear 0s 2 forwards;
+        }
+        &:nth-child(2) {
+            animation: show-bar 1s ease-in 0s 2 forwards;
+        }
+        &:nth-child(3) {
+            animation: show-bar 1.1s linear 0s 1 forwards;
+        }
+        &:nth-child(4) {
+            animation: show-bar 1s ease-in-out 0s 3 forwards;
+        }
+    }
+}
+
+@keyframes show-bar {
+    0% {
+        width: 0;
+        background-color: #eee;
+    }
+    70% {
+        width: 330px;
+        background-color: #199;
+    }
+    100% {
+        width: 330px;
+        background-color: #199;
+    }
+}
